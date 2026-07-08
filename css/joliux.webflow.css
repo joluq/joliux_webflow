@@ -2512,6 +2512,19 @@ img {
   background-color: var(--body);
 }
 
+.image-6 {
+  width: 50%;
+  padding-right: 0;
+}
+
+.image-6.leftimagecol {
+  padding-right: 25px;
+}
+
+.image-6.rightimagecol {
+  padding-left: 25px;
+}
+
 @media screen and (max-width: 991px) {
   .link.outsidetext {
     margin-right: 30px;
