@@ -103,6 +103,8 @@
 }
 
 :root {
+  --secondary-text: #807e7e;
+  --tertiary-text: #bbb;
   --cornflower-blue: #9099ff;
   --untitled-ui-gray700: #344054;
   --untitled-ui-primary600: #7f56d9;
@@ -503,7 +505,7 @@ img {
 }
 
 .projecttags {
-  color: #807e7e;
+  color: var(--secondary-text);
   letter-spacing: 1px;
   margin-bottom: 0;
   margin-right: 5px;
@@ -524,7 +526,7 @@ img {
 }
 
 .projecttags.projecttype.notonmobile {
-  color: #bbb;
+  color: var(--tertiary-text);
   font-size: 18px;
   display: block;
 }
@@ -612,18 +614,18 @@ img {
   color: #000;
   margin-top: 0;
   margin-bottom: -18px;
-  font-family: Open Sans, sans-serif;
+  font-family: HelveticaNeueMedium, Arial, sans-serif;
   font-size: 160%;
   font-weight: 600;
 }
 
 .onlymobile.hometitle {
-  color: #3b3b3b;
+  color: #000;
   padding-right: 220px;
   font-family: Moderat, Arial, sans-serif;
   font-size: 100%;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .videos {
@@ -1900,7 +1902,8 @@ img {
 
 .brix---header-nav-link {
   color: #8f8f8f;
-  padding: 0;
+  border-right: 2px solid #8f8f8f;
+  padding: 0 20px;
   font-family: Moderat, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1914,13 +1917,16 @@ img {
 
 .brix---header-nav-link.w--current {
   color: #252525;
+  border-right: 2px solid #8f8f8f;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: Moderat, Arial, sans-serif;
   font-weight: 400;
 }
 
 .brix---header-nav-list-item {
   margin-bottom: 0;
-  padding-left: 32px;
+  padding-left: 0;
 }
 
 .brix---header-nav-list-item-show-in-tablet {
@@ -2523,6 +2529,21 @@ img {
 
 .image-6.rightimagecol {
   padding-left: 25px;
+}
+
+.homename {
+  color: #000;
+  margin-top: 100px;
+  margin-bottom: -22px;
+  font-family: HelveticaNeueMedium, Arial, sans-serif;
+  font-size: 36px;
+}
+
+.homenamerole {
+  margin-top: 0;
+  font-family: Helvetica Neue Light, Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
@@ -3630,6 +3651,10 @@ img {
     padding-bottom: 64px;
   }
 
+  .introimage.heroimage {
+    display: none;
+  }
+
   .container {
     max-width: none;
   }
@@ -3705,6 +3730,13 @@ img {
 
 #w-node-ffa73c05-b4ac-f3e8-c541-20425e1bcc5d-ab07ee99, #w-node-ffa73c05-b4ac-f3e8-c541-20425e1bcc60-ab07ee99 {
   grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-_4a1b4171-cb8e-27ec-bd7c-29f20bc2b03e-ab07ee96 {
+    grid-template-rows: auto;
+    grid-template-columns: .25fr 1fr;
+  }
 }
 
 
